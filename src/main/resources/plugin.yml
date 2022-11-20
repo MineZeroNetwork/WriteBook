@@ -1,0 +1,6 @@
+name: WriteBook
+version: '${project.version}'
+main: net.minezero.writebook.WriteBook
+api-version: 1.19
+commands:
+  wbook:
