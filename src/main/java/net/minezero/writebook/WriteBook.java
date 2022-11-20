@@ -142,7 +142,6 @@ public final class WriteBook extends JavaPlugin {
             ItemStack item = new ItemStack(Material.WRITTEN_BOOK);
             BookMeta meta = (BookMeta) item.getItemMeta();
             meta.setTitle(section.getString(name+".title"));
-            Bukkit.getLogger().info(section.getString(name+".title"));
             meta.setAuthor(section.getString(name+".author"));
             for (String str : section.getStringList(name+".pages")) {
                 meta.addPages(ComponentUtil.makeC(str.replaceAll("<br>", "\n")));
